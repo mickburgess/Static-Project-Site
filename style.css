@@ -1,0 +1,75 @@
+body {
+  font-family: "Arial", 'Helvetica Neue', Helvetica, sans-serif;
+  color: #777;
+  background: #777;
+  width: 960px;
+  font-size: 18px;
+  text-align: center;
+}
+
+header, nav, section, aside, footer {
+  background: #ebebeb;
+}
+
+header {
+  padding: 25px;
+  margin-bottom: 10px;
+}
+
+nav {
+  padding: 25px;
+}
+
+section, aside {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+article {
+  color: #ebebeb;
+  background: #777;
+  border: #777 25px solid;
+  border-top-width: 0;
+  border-bottom-width: 5px;
+  /*Position based off nearest ancestor that is not static.
+  Top, bottom, right, or left specifies offsets from the edges
+  of the containing block.*/
+  position: absolute;
+  right: 5px;
+  left: 5px;
+  bottom: 5px;
+  
+}
+
+h1, p {
+  color: #777;
+  background-color: #ebebeb;
+  padding: 20px;
+}
+
+p {
+  margin-top: -10px;
+}
+
+aside {
+  float: left;
+  width: 425px;
+  height: 345px;
+}
+
+section {
+  width: 495px;
+  height: 325px;
+  float: left;
+  overflow: auto;
+  /*Position value is relative. Top, bottom, left and right specify offset from normal position.*/
+  position: relative;
+  margin-right: 20px;
+  border: #ebebeb 10px solid;
+}
+
+footer {
+  /* Used to stop float effect from occuring*/
+  clear: both;
+  padding: 25px;
+}
